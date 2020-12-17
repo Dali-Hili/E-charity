@@ -1,0 +1,97 @@
+body {
+	margin: 0;
+}
+
+img {
+	height: 8em;
+}
+body{
+	background-color: #b1ddf1;
+}
+
+.navbar {
+	background-color: #173F5F;
+	width: 100%;
+	display: flex;
+    font-family: 'futura-heavy',Georgia,"Times New Roman",serif;
+    overflow: hidden;
+}
+
+.navbar-link {
+	text-decoration: none;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 4em;
+  	color: #f2f2f2;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	font-size: 20px;
+  	margin-top: 2em;
+  	margin-right: 10em;	
+}
+.navbar-link:hover{
+	background-color: #F6D55C;
+}
+
+.cases{
+ display: inline-block;
+ position: center;
+ margin-left: 10em;
+ margin-top: 5em;
+ background-color: #4196a8;
+ opacity: 0.6;
+ border-radius: 10px;
+ height: 30em;
+ width: 25em;
+}
+
+.cases:hover{
+	opacity: 1;
+}
+
+.casesimg{
+	border-radius: 10px 100px / 120px;
+	max-width: 100%;
+	height: 15em;
+	margin-left: 17px;
+}
+
+.casesbutton{
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 8em;
+  height: 4em;
+  margin: 20px;
+  border: 10px solid var(--base-color);
+  font-size: 1em;
+  cursor: pointer;
+  opacity: 0.5;
+  border-radius: 10px;
+  float: right;
+}
+
+.casesbutton:hover{
+background-color: #5d5d5d;
+}
+
+.casestext{
+	font-size: 20px;
+	font-family: 'Andika New Basic', sans-serif;
+	color: #e0dfd5;
+}
+
+
+
+/*part2*/
+.whyus{
+	margin-left: 25em;
+	font-family: 'Anton', sans-serif;
+	color: #f2f3f4;
+}
+.whyyus{
+	background-color: #4196a8;
+}
