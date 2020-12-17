@@ -109,6 +109,8 @@ background-color: #5d5d5d;
 
 
 /*part2*/
+
+
 .whyus{
 	margin-left: 25em;
 	font-family: 'Anton', sans-serif;
@@ -141,3 +143,65 @@ footer{
 	background-color: #173F5F;
 	margin-bottom: 9em;
 }
+
+#formlink{
+	font-size: 2em;
+	margin-left: 25em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.info-link{
+	margin-bottom: 0.3em;
+}
+
+#sub-btn{
+	padding: 5px 4.7em;
+    display: inline-block;
+    margin-left: 0em;
+	color:#fff;
+	background-color: #173F5F;
+	outline: none;
+    border: 0;
+    color: #fff;
+	text-transform:uppercase;
+	border-radius:2px;
+	cursor:pointer;
+	position:relative;
+}
+
+.infoadmin{
+	margin-bottom: 0.3em;
+	font-size: 2em;
+	margin-right: 2em;
+	display: block;
+    margin: 4px;
+}
+
+#admindiv{
+	margin-left: 40em;
+	margin-top: 15em;
+}
+
+#login{
+	padding: 7px 13.7em;
+    display: inline-block;
+    margin-left: 0em;
+	color:#fff;
+	background-color: #173F5F;
+	outline: none;
+    border: 0;
+    color: #fff;
+	text-transform:uppercase;
+	border-radius:2px;
+	cursor:pointer;
+	position:relative;
+}
+
+/*#adminlogin{
+	font-size: 2em;
+	margin-left: 25em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+*/

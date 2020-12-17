@@ -1,6 +1,35 @@
+$(".input").hide ()
+$("#sub-btn").hide()
+var info =[]
+var addinfo=function(event) {
+	event.preventDefault()
+	var information={
+		name:$("#name").val(),
+		email:$("#email").val(),
+		phone:$('#phone').val()
+	}
+	   info.push(information)
+	    document.forms[0].reset()
+       localStorage.setItem('information-list', JSON.stringify(info))
+       }
+$("#sub-btn").click(addinfo)
+
+
+$(document).ready(function(){
+
+$(".casesbutton").on("click",function(){
+ $(".cases").hide()
+ $('#whyuss').hide()
+ $('#whyusimg').hide()
+ $('#actions').hide()
+ $(".input").slideDown()
+ $("#sub-btn").show()
+})
+})
+
+
 var slideIndex = 1;
 showDivs(slideIndex);
-
 function plusDivs(n) {
   showDivs(slideIndex += n);
 }
@@ -16,18 +45,21 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
 }
 
-
-// $("#ouractions").click(function(){
-//   $(".cases").hide();
-// });
-// $("#ouractions").click(function(){
-//   $("#whyuss").hide();
-// });
-
+// our actions button
 
 $('#ouractions').click(function () {
 $('.cases').hide();
 $('#whyuss').hide();
-$(".w3-content w3-display-container").hide();
-$('#actionsLink').slideDown();
+$("#whyusimg").hide();
+$('#actions').slideDown();
+});
+
+//why us button
+
+$('#whyus').click(function () {
+$('#actions').hide();
+$('#allcases').hide();
+$("#whyusimg").hide();
+$('#whyuss').slideDown();
+
 });
