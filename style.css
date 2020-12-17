@@ -84,6 +84,28 @@ background-color: #5d5d5d;
 	color: #e0dfd5;
 }
 
+.contact{
+	color: white;
+	font-size: 2em;
+}
+
+.log{
+	height: 4em;
+	list-style: none;
+	margin-bottom: -2em;
+}
+
+.logger{
+	margin:50px;
+	color: white;
+	list-style: none;
+	display:inline-block;
+}
+
+#contact{
+	height: 4em;
+	list-style: none;
+}
 
 
 /*part2*/
@@ -92,6 +114,30 @@ background-color: #5d5d5d;
 	font-family: 'Anton', sans-serif;
 	color: #f2f3f4;
 }
+
 .whyyus{
-	background-color: #4196a8;
+	background-color: #b1ddf1;
+}
+
+.navbarstyle{
+	font-family: 'Dancing Script', cursive;
+	font-size: 20px;
+	margin-left: 25em;
+	margin-right: 25em;
+}
+.h2{
+	margin-left: 25em;
+	font-family: 'Bebas Neue', cursive;
+	color: #173f5f
+
+}
+.mySlides{
+height: 30em;
+display: none;
+
+}
+
+footer{
+	background-color: #173F5F;
+	margin-bottom: 9em;
 }

@@ -8,17 +8,18 @@
       <script src='https://code.jquery.com/jquery-2.2.4.js'></script>
       <link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
 	<div class="navbar">
-		<img src="./images/logo.png">
-        <a class="navbar-link" href="#vision">Our Partners</a>
-       	<a class="navbar-link" href="#actions">Our Actions</a>
-    	<a class="navbar-link" href="#aboutus">Why us</a>
-        <a class="navbar-link" href="#contact">Contact us</a>
+		<a href="/"> <img src="./images/logo.png" ></a>
+        <a class="navbar-link" id="ourpartners" href="#vision">Our Partners</a>
+       	<a class="navbar-link" id="ouractions" href="#actions">Our Actions</a>
+    	<a class="navbar-link" id="whyus" href="#aboutus">Why us</a>
+        <a class="navbar-link" id="contactus" href="#contact">Contact us</a>
     </div>	
-	<div class="cases" >
+	<div class="cases">
 	  	<img class="casesimg" src="./images/poor1.jpg">
 	  	<p class="casestext">Mohamed‘s family need you to help them to built a house, if you really believe in our project please contact us.</p>
 	  	<button class="casesbutton" > INTERESTED </button>
@@ -33,31 +34,58 @@
 	  	<p class="casestext">Think about the blessing that we have all food, but this kid will never survive if you won’t help him.</p>
 	  	<button class="casesbutton" >INTERESTED</button>
 	</div>
-
+	
 	<!-- Part 2 -->
-	<div class="whyyus" >
-	<h1 class="whyus" > Why us? </h1>
-	<h2> We make our tunisia better </h2>
-	<p>E-charity  is a national Tunisian organization working in the direct field to  fight poverty and needy people in all over the country , our strategy is to facilitate the connection between philanthropist and the needy people , if you are convinced with our vision , start to be the saver and help ,help ,help…</p>	
+	<div class="whyyus" id="whyuss">
+	<h1 class="whyus"  id="whyuss"> Why us? </h1>
+	<h2 class="h2" id="whyuss"> Because we want to make our tunisia better </h2>
+	<p class="navbarstyle" id="whyuss">E-charity  is a national Tunisian organization working in the direct field to  fight poverty and needy people in all over the country , our strategy is to facilitate the connection between philanthropist and the needy people , if you are convinced with our vision , start to be the saver and help ,help ,help…</p>
+	</div>	
+	
+	<div class="w3-content w3-display-container" id="whyuss">
+		<img class="mySlides"  src="./images/charity1.png" style="width:100%">
+  		<img class="mySlides"  src="./images/charity2.jpg" style="width:100%" >
+  		<img class="mySlides"  src="./images/charity3.jpg" style="width:100%" >
+  		<img class="mySlides"  src="./images/charity4.jpg" style="width:100%">
+  		
+  		<button class="w3-button w3-black w3-display-left"  onclick="plusDivs(-1)">&#10094;</button>
+  		
+  		
+  		<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  		
 	</div>
 
-	<div>
-	<h1> Our Actions </h1>
-	<p> Create more than 3000 link between philanthropist and the needy people <br> 
+
+	<div class="whyyus" id="actionsLink">
+	<h1 class="whyus"> Our Actions </h1>
+	<p class="navbarstyle"> Create more than 3000 link between philanthropist and the needy people <br> 
 Help 3000 person in different way : </p> 
-<ul>
+<ul class="navbarstyle">
 	<li>Food.</li>
 	<li>Clothes.</li>
 	<li>Medication.</li>
 	<li>Building houses.</li>
 	<li>Built more than 300 houses across the country.</li>
 </ul>
-
+</div>
+<footer>
+	<ul id="contact">
+            <li class="logger">
+                <p class="contact"> Contact us:  </p>
+            </li>
+            <li class="logger">
+               <a target="_blank" href="https://www.facebook.com/echaritygr"> <img class="log" src="./images/facebook.png"> </a>
+            </li>
+            <li class="logger">
+               <a target="_blank" href="https://www.instagram.com/echaritygr/"> <img class="log" src="./images/instinst.png"> </a>
+            </li>
+            
+        </ul>	
+</footer>
  	
 
-	</div>
-
-	</div>
+	
 	<script type="text/javascript" src="main.js"></script>
+	
 </body>
 </html>
