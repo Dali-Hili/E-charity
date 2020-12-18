@@ -69,6 +69,41 @@ $('#whyuss').slideDown();
 
 });
 
+//our partners button
+
+// $("#global").hide();
+// $('#ourpartners').click(function () {
+// $('#actions').hide();
+// $('#allcases').hide();
+// $("#whyusimg").hide();
+// $(".part").hide();
+// $('#ourpartners').slideDown();
+
+// Go back button
+
+$("#goback").click(function(){
+$(".ghassen").hide();
+$("#discription").hide();
+$("#photolink").hide();
+$("#post").hide()
+$(".infoadmin").slideDown();
+$("#login").slideDown();
+$(".butts").slideDown();
+})
+
+// add new post button
+
+// $("#goback").click(function(){
+// $(".ghassen").hide();
+// $("#discription").hide();
+// $("#photolink").hide();
+// $("#post").hide()
+// $(".infoadmin").slideDown();
+// $("#login").slideDown();
+// $(".butts").slideDown();
+// })
+
+
 var informationList = JSON.parse(localStorage.getItem('information-list'))
 for (var i = 0; i < informationList.length; i++){
     $(".ghassen").append(` <div class="clientinfo"> <h2>${informationList[i].name} is intrested in this one </h2> <h2 class="client">  </h2>    <h2 class="clientinfo"> <h2> Email: </h2> <h2 class="infor">${informationList[i].email}</h2>  <h2> Phone number: </h2> <h2> ${informationList[i].phone} </h2> </div>`);
@@ -78,17 +113,21 @@ $('.ghassen').hide()
 $('#notif').click(function () {
 $(".infoadmin").hide();
 $("#login").hide();
+$("#newcase").hide()
 $(".ghassen").slideDown();
 });
 
-$('.addcase').hide()
-$('#newcase').click(function () {
+$(".addcase").hide()
+$("#newcase").click(function () {
 $(".infoadmin").hide();
 $("#login").hide();
 $("#notif").hide();
-
 $(".addcase").slideDown();
+$("#discription").slideDown();
+$("#photolink").slideDown();
+$("#post").slideDown();
 });
+
 $("#global").hide()
 
 var jdidi= []
@@ -127,7 +166,7 @@ function checkAdmin(){
   }
 }
 
-var admin= ["echarity@gmail.com",12345]
+// var admin= ["echarity@gmail.com",12345]
 
 
 // $('#login').click(function () {
@@ -146,4 +185,4 @@ var admin= ["echarity@gmail.com",12345]
             // $('.buttons').show()
             // $('.addcase').show()
       
-    // })
+  
