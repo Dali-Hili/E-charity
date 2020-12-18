@@ -1,5 +1,7 @@
-$(".input").hide ()
-$("#sub-btn").hide()
+
+// $(".butts").hide()
+// $(".input").hide ()
+// $("#sub-btn").hide()
 var info =[]
 var addinfo=function(event) {
   event.preventDefault()
@@ -39,8 +41,7 @@ $(".casesbutton").on("click",function(){
  $('#actions').hide()
  $('.partn').hide()
  $('#contact').hide()
- $(".input").slideDown()
- $("#sub-btn").show()
+ $("#global").slideDown()
 })
 })
 
@@ -53,6 +54,7 @@ $('#ouractions').click(function () {
 $('.cases').hide();
 $('#whyuss').hide();
 $("#whyusimg").hide();
+$(".part").hide();
 $('#actions').slideDown();
 });
 
@@ -62,21 +64,21 @@ $('#whyus').click(function () {
 $('#actions').hide();
 $('#allcases').hide();
 $("#whyusimg").hide();
+$(".part").hide();
 $('#whyuss').slideDown();
 
 });
 
 var informationList = JSON.parse(localStorage.getItem('information-list'))
 for (var i = 0; i < informationList.length; i++){
-    $(".ghassen").append(` <div class="notif"> <h2 class="client">${informationList[i].name} is intrested in this one </h2> <h2 class="client"> ${informationList[i].name} </h2>    <h2 class="client">${informationList[i].email}</h2>  <h2 class="client">  ${informationList[i].phone} </h2> </div>`);
+    $(".ghassen").append(` <div class="clientinfo"> <h2>${informationList[i].name} is intrested in this one </h2> <h2 class="client">  </h2>    <h2 class="clientinfo"> <h2> Email: </h2> <h2 class="infor">${informationList[i].email}</h2>  <h2> Phone number: </h2> <h2> ${informationList[i].phone} </h2> </div>`);
 }
 
-$('.notif').hide()
+$('.ghassen').hide()
 $('#notif').click(function () {
 $(".infoadmin").hide();
 $("#login").hide();
-// $().hide();
-$(".notif").slideDown();
+$(".ghassen").slideDown();
 });
 
 $('.addcase').hide()
@@ -84,8 +86,10 @@ $('#newcase').click(function () {
 $(".infoadmin").hide();
 $("#login").hide();
 $("#notif").hide();
+
 $(".addcase").slideDown();
 });
+$("#global").hide()
 
 var jdidi= []
 var addcase=function() {
@@ -116,3 +120,30 @@ var addcase=function() {
        }
   
 $("#post").click(addcase)
+
+function checkAdmin(){
+  for(var i=0;i<checkAdmin;i++){
+    
+  }
+}
+
+var admin= ["echarity@gmail.com",12345]
+
+
+// $('#login').click(function () {
+       
+         // var localData = JSON.parse.getItem(admin)
+         
+        
+         // var usernamelog = $('#userlink').val();
+         // var userpasswordlog = $('#pswlink').val();
+
+
+         // if (usernamelog === JSON.parse(admin[0]) && userpasswordlog === admin[1]) {
+         //     alert('You are logged in.');}
+
+             // $("#admindiv").hide()
+            // $('.buttons').show()
+            // $('.addcase').show()
+      
+    // })

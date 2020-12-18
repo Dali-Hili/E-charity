@@ -86,6 +86,14 @@ background-color: #5d5d5d;
 	color: #e0dfd5;
 }
 
+.addcase{
+	display: block;
+    margin-left: 48em;
+    display: grid;
+    margin-right: 48em;
+    height: 12em;
+}
+
 .contact{
 	color: white;
 	font-size: 2em;
@@ -135,6 +143,21 @@ background-color: #5d5d5d;
 	margin-left: 10em;
 	margin-right: 10em;
 	background-color: #4196a8;
+}
+.clientinfo{
+	font-family: 'Dancing Script', cursive;
+	font-size: 20px;
+	margin-left: 20em;
+	margin-right: 20em;
+	background-color: #4196a8;
+	opacity: 0.8;
+}
+.clientinfo:hover{
+	opacity:1;
+	color: #2F4F4F;
+}
+h2{
+	margin-left: 4em;
 }
 .h2{
 	margin-left: 13em;
