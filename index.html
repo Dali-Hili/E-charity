@@ -128,7 +128,12 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
 }	
- 		
+
+var caseslist= JSON.parse(localStorage.getItem('cases-list'))
+console.log(caseslist)
+for (var i = 0; i < caseslist.length; i++){
+    $("#allcases").append(`<div class="cases"> <img class="casesimg" src = '${caseslist[i].photo}' >   <p class="casestext"> ${caseslist[i].description} </p>  <button class="casesbutton" >INTERESTED</button> </div>`)
+  }
  	</script>
 
 	
