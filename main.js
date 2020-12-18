@@ -2,16 +2,20 @@ $(".input").hide ()
 $("#sub-btn").hide()
 var info =[]
 var addinfo=function(event) {
-	event.preventDefault()
-	var information={
-		name:$("#name").val(),
-		email:$("#email").val(),
-		phone:$('#phone').val()
-	}
-	   info.push(information)
-	    document.forms[0].reset()
-       localStorage.setItem('information-list', JSON.stringify(info))
-       }
+  event.preventDefault()
+  var information={
+    name:$("#name").val(),
+    email:$("#email").val(),
+    phone:$('#phone').val()
+  }
+     info.push(information)
+      document.forms[0].reset()
+        var olddata=localStorage.getItem('information-list');
+        var newData = JSON.parse(olddata) 
+        newData.push(information)
+ console.log(JSON.parse(localStorage.getItem('information-list')))
+ localStorage.setItem('information-list', JSON.stringify(newData))
+       }    
 $("#sub-btn").click(addinfo)
 
 
@@ -22,6 +26,7 @@ $(".casesbutton").on("click",function(){
  $('#whyuss').hide()
  $('#whyusimg').hide()
  $('#actions').hide()
+ $('.partn').hide()
  $(".input").slideDown()
  $("#sub-btn").show()
 })

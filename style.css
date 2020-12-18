@@ -22,17 +22,19 @@ body{
 	font-family: 'Oswald', sans-serif;
 	font-weight: 400;
 	text-transform: uppercase;
-	margin: 4em;
+	/*margin: 1em;*/
   	color: #f2f2f2;
   	text-align: center;
   	padding: 14px 16px;
   	text-decoration: none;
   	font-size: 20px;
   	margin-top: 2em;
-  	margin-right: 10em;	
+  	margin-right: 5em;
+  	margin-left: 5em;	
 }
 .navbar-link:hover{
 	background-color: #F6D55C;
+	    padding-top: 27px;
 }
 
 .cases{
@@ -87,12 +89,17 @@ background-color: #5d5d5d;
 .contact{
 	color: white;
 	font-size: 2em;
+	margin-top: -2em;
 }
 
+#contact{
+	margin-bottom: 0em;
+}
 .log{
 	height: 4em;
 	list-style: none;
 	margin-bottom: -2em;
+	margin-top: -3em;
 }
 
 .logger{
@@ -102,18 +109,19 @@ background-color: #5d5d5d;
 	display:inline-block;
 }
 
-#contact{
+/*#contact{
 	height: 4em;
 	list-style: none;
-}
+}*/
 
 
 /*part2*/
 
 
 .whyus{
-	margin-left: 25em;
-	font-family: 'Anton', sans-serif;
+	margin-left: 13em;
+	font-family: 'Pacifico', cursive;
+	font-size: 4em;
 	color: #f2f3f4;
 }
 
@@ -123,13 +131,15 @@ background-color: #5d5d5d;
 
 .navbarstyle{
 	font-family: 'Dancing Script', cursive;
-	font-size: 20px;
-	margin-left: 25em;
-	margin-right: 25em;
+	font-size: 30px;
+	margin-left: 10em;
+	margin-right: 10em;
+	background-color: #4196a8;
 }
 .h2{
-	margin-left: 25em;
+	margin-left: 13em;
 	font-family: 'Bebas Neue', cursive;
+	font-size: 40px;
 	color: #173f5f
 
 }
@@ -141,7 +151,7 @@ display: none;
 
 footer{
 	background-color: #173F5F;
-	margin-bottom: 9em;
+	margin:0em;
 }
 
 #formlink{
@@ -179,7 +189,7 @@ footer{
 }
 
 #admindiv{
-	margin-left: 40em;
+	margin-left: 51em;
 	margin-top: 15em;
 }
 
@@ -205,3 +215,41 @@ footer{
 	margin-bottom: 2em;
 }
 */
+
+#btn-admin{
+	float: right;
+	margin-right: 2em;
+	margin-top: 3em;
+}
+
+.buttons{
+	margin-left: 50em;
+    margin-top: 3em;
+}
+
+.butts{
+	padding: 0.5em;
+    font-size: 2em;
+    border-radius: 10px;
+    background-color: #173F5F; 
+}
+
+.butts:hover{
+	background-color: #4196a8;
+}
+
+.partimg{
+	height: 18em;
+    margin-left: 45em;
+    margin-left: 14em;
+    margin-right: 5em;
+    margin-top: 5em;
+}
+
+.notif{
+	background-color: black;
+	height: 7em;
+	width: 8em;
+	margin-left: 12em;
+	border-radius: 12px;
+}
