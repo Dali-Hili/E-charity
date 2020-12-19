@@ -1,7 +1,5 @@
 
-// $(".butts").hide()
-// $(".input").hide ()
-// $("#sub-btn").hide()
+
 var info =[]
 var addinfo=function(event) {
   event.preventDefault()
@@ -10,10 +8,15 @@ var addinfo=function(event) {
     email:$("#email").val(),
     phone:$('#phone').val()
   }
+  if(information.name === "" || information.email=== "" || information.phone === ""){
+    alert(`Wrong information`)
+  }
+  else{
      info.push(information)
       document.forms[0].reset()
         var olddata=localStorage.getItem('information-list');
         var newData = JSON.parse(olddata) 
+     
         if(Array.isArray(newData)){
           newData.push(information)
            localStorage.setItem('information-list', JSON.stringify(newData))
@@ -24,7 +27,7 @@ var addinfo=function(event) {
            localStorage.setItem('information-list', JSON.stringify(newData))
 
         }
-
+ }
         
         
 
@@ -106,7 +109,7 @@ $(".butts").slideDown();
 
 var informationList = JSON.parse(localStorage.getItem('information-list'))
 for (var i = 0; i < informationList.length; i++){
-    $(".ghassen").append(` <div class="clientinfo"> <h2>${informationList[i].name} is intrested in this one </h2> <h2 class="client">  </h2>    <h2 class="clientinfo"> <h2> Email: </h2> <h2 class="infor">${informationList[i].email}</h2>  <h2> Phone number: </h2> <h2> ${informationList[i].phone} </h2> </div>`);
+    $(".ghassen").append(` <div class="clientinfo"> <h2>${informationList[i].name} is intrested </h2> <h2 class="client">  </h2>    <h2 class="clientinfo"> <h2> Email: </h2> <h2 class="infor">${informationList[i].email}</h2>  <h2> Phone number: </h2> <h2> ${informationList[i].phone} </h2> </div>`);
 }
 
 $('.ghassen').hide()
@@ -128,7 +131,9 @@ $("#photolink").slideDown();
 $("#post").slideDown();
 });
 
-$("#global").hide()
+
+
+$("#global").hide();
 
 var jdidi= []
 var addcase=function() {
@@ -166,23 +171,6 @@ function checkAdmin(){
   }
 }
 
-// var admin= ["echarity@gmail.com",12345]
 
-
-// $('#login').click(function () {
-       
-         // var localData = JSON.parse.getItem(admin)
-         
-        
-         // var usernamelog = $('#userlink').val();
-         // var userpasswordlog = $('#pswlink').val();
-
-
-         // if (usernamelog === JSON.parse(admin[0]) && userpasswordlog === admin[1]) {
-         //     alert('You are logged in.');}
-
-             // $("#admindiv").hide()
-            // $('.buttons').show()
-            // $('.addcase').show()
       
   

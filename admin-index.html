@@ -26,15 +26,41 @@
 	<button class="butts" id="notif"> Notification </button>
 	<button class="butts" id="newcase"> Add New case </button>
 </div>
+<center>
 <div class="ghassen">
 </div>
+</center>
 <div class="addcase">
 	<input placeholder="discription" id="discription" type="test" name="discription">
 	<input placeholder="Photo link" id="photolink" type="text" name="Photo link">
 	<button id="post"> POST </button>
 </div>
 
+<script type="text/javascript">
+	
+$(".butts").hide()
+$(".addcase").hide()
+	var admin= ["echarity@gmail.com","12345"]
 
+
+$('#login').click(function (event) {  
+	event.preventDefault()
+         var usernamelog = $('#userlink').val();
+         var userpasswordlog = $('#pswlink').val();
+         
+         if (usernamelog !== admin[0] || userpasswordlog !== admin[1]) {
+         	 alert('username or password is wrong')
+         	 return
+         }
+         if (usernamelog === admin[0] && userpasswordlog === admin[1]) {
+         	 alert('You are logged in.')
+             	$("#adminlogin").hide()
+             	$(".butts").show()
+         }
+            
+
+              })
+</script>
 <script type="text/javascript" src="main.js"></script>
 </body>
 </html>

@@ -163,10 +163,13 @@ body{
 .clientinfo{
 	font-family: 'Dancing Script', cursive;
 	font-size: 20px;
-	margin-left: 20em;
-	margin-right: 20em;
+	/*margin-left: 20em;*/
+	/*margin-right: 20em;*/
 	background-color: #4196a8;
 	opacity: 0.8;
+	margin-left: 48em;
+    margin-right: 54em;
+    text-align: center;
 }
 
 .clientinfo:hover{
